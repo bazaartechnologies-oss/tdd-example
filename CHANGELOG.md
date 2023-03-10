@@ -1,0 +1,6 @@
+# 1.0.0 (2023-03-10)
+
+
+### Features
+
+* **repo-setup:** initialized repository and project structure ([d0ecb51](https://github.com/bazaartechnologies-oss/tdd-example/commit/d0ecb51ea5cb3667875cfc1ec5d75a8db58d6620))
