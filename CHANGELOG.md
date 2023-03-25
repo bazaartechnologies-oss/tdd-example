@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.1.0...v1.2.0) (2023-03-25)
+
+
+### Features
+
+* **getEmployees:** added functionality to validate if employees data was sucessfully fetched ([05f45c2](https://github.com/bazaartechnologies-oss/tdd-example/commit/05f45c2a10939ae822bc851af58e147b88884f4f))
+
 # [1.1.0](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.0.0...v1.1.0) (2023-03-12)
 
 
