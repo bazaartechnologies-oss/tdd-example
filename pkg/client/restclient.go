@@ -8,9 +8,9 @@ import (
 	"net/http"
 )
 
-func getEmployees() (success bool, response map[string]interface{}) {
+func getEmployees(url string) (success bool, response map[string]interface{}) {
 
-	r, err := http.Get("https://dummy.restapiexample.com/api/v1/employees")
+	r, err := http.Get(url)
 	if err != nil {
 		log.Printf("Unable to call the server: %v", err)
 		return success, response

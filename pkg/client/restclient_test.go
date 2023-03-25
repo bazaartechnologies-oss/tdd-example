@@ -4,7 +4,8 @@ import "testing"
 
 func TestGetEmployeeDetails(t *testing.T) {
 	var response = make(map[string]interface{})
-	success, response := getEmployees()
+	url := "https://dummy.restapiexample.com/api/v1/employees"
+	success, response := getEmployees(url)
 
 	if success != true {
 		t.Errorf("Failed to get response from server: %v", success)
