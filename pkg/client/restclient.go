@@ -1,6 +1,7 @@
 package client
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -8,15 +9,22 @@ import (
 	"net/http"
 )
 
-func getEmployees(url string, headers map[string]string) (success bool, response map[string]interface{}) {
+type HTTPRequest struct {
+	Headers map[string]string
+	URL     string
+	Method  string
+	Body    []byte
+}
+
+func (h *HTTPRequest) Client() (success bool, response map[string]interface{}) {
 
 	c := http.Client{}
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequest(h.Method, h.URL, bytes.NewBuffer(h.Body))
 	if err != nil {
 		log.Printf("error %v", err)
 	}
 
-	for k, v := range headers {
+	for k, v := range h.Headers {
 		req.Header.Add(k, v)
 	}
 
