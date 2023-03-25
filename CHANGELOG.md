@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.3.1...v1.4.0) (2023-03-25)
+
+
+### Features
+
+* **getEmployees:** added headers and use generic http.NewRequest ([ad3e2c3](https://github.com/bazaartechnologies-oss/tdd-example/commit/ad3e2c3dfab012cddeba5f776fa8e863fdd26592))
+
 ## [1.3.1](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.3.0...v1.3.1) (2023-03-25)
 
 # [1.3.0](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.2.0...v1.3.0) (2023-03-25)
