@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.2.0...v1.3.0) (2023-03-25)
+
+
+### Features
+
+* **getEmployees:** added functionality to create and return response from API ([40c7037](https://github.com/bazaartechnologies-oss/tdd-example/commit/40c703700be2a8b7b723202635c907b2708a8c0d))
+
 # [1.2.0](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.1.0...v1.2.0) (2023-03-25)
 
 
