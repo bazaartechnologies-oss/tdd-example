@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.4.0...v1.5.0) (2023-03-25)
+
+
+### Features
+
+* **httpRequest.Client:** created reciever function and added struct to support multiple call methods ([fa97cee](https://github.com/bazaartechnologies-oss/tdd-example/commit/fa97ceed9a10cf22935bbd48802b86280ebaed0f))
+
 # [1.4.0](https://github.com/bazaartechnologies-oss/tdd-example/compare/v1.3.1...v1.4.0) (2023-03-25)
 
 
