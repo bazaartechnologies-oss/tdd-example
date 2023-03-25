@@ -8,9 +8,20 @@ import (
 	"net/http"
 )
 
-func getEmployees(url string) (success bool, response map[string]interface{}) {
+func getEmployees(url string, headers map[string]string) (success bool, response map[string]interface{}) {
 
-	r, err := http.Get(url)
+	c := http.Client{}
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		log.Printf("error %v", err)
+	}
+
+	for k, v := range headers {
+		req.Header.Add(k, v)
+	}
+
+	r, err := c.Do(req)
+
 	if err != nil {
 		log.Printf("Unable to call the server: %v", err)
 		return success, response
